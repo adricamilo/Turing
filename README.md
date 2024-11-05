@@ -1,6 +1,6 @@
 # Turing
 
-This is a Python simulator of a modified Turing machine. This construction was first suggested by Post[^1]. For a complete theorical description, see Chapter 1 of Davis[^2].
+This is a Python simulator of a modified Turing machine. This construction was first suggested by Post [1]. For a complete theorical description, see Chapter 1 of Davis [2].
 
 ## Basic usage
 
@@ -38,11 +38,11 @@ This defines a Turing machine capable of adding nonnegative integers. We have:
 
 ## Notes
 
-This simulation does not (yet) support relative computations (see Chapter 1, Section 4, of Davis[^2]). Computations with quadruples of the form $q_i\;S_j\;q_k\;q_l$ will throw exceptions.
+This simulation does not (yet) support relative computations (see Chapter 1, Section 4, of Davis [2]). Computations with quadruples of the form $q_iS_jq_kq_l$ will throw exceptions. Also, Davis uses $B$ for blanks; we use $0$.
 
-[^1] Emil L. Post. "Recursive Unsolvability of a Problem of Thue." In: *Journal of Symbolic
-Logic* 12.1 (Mar. 1947), pp. 1–11. issn: 00224812. doi: `10.2307/2267170`. url:
+[1] Emil L. Post. "Recursive Unsolvability of a Problem of Thue." In: *Journal of Symbolic
+Logic* 12.1 (Mar. 1947), pp. 1–11. ISSN: 00224812. DOI: `10.2307/2267170`. URL:
 `http://www.jstor.org/stable/2267170`.
 
-[^2] Martin Davis. *Computability & Unsolvability*. Orig. publ.: New York, McGraw-Hill, 1958.
-New York, NY: Dover Publications, Inc., 1982. 248 pp. isbn: 9780486614717.
+[2] Martin Davis. *Computability & Unsolvability*. Orig. publ.: New York, McGraw-Hill, 1958.
+New York, NY: Dover Publications, Inc., 1982. 248 pp. ISBN: 9780486614717.
