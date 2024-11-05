@@ -46,7 +46,7 @@ class AlphabetSymbol(AbstractSymbol):
 
     def __str__(self) -> str:
         if self.symbol == 0:
-            return 'B'  # Blank symbol
+            return '0'  # Blank symbol
         elif self.symbol == 1:
             return '1'
         return f"S{self.int_to_subscript(self.symbol)}"
@@ -67,13 +67,13 @@ class Quadruple:
     def _parse_third_element(self, e3: str) -> Union[str, AbstractSymbol]:
         if e3 in ('R', 'L'):
             return e3
-        elif e3 == 'B':
+        elif e3 == '0':
             return AlphabetSymbol(0)
         elif e3 == '1':
             return AlphabetSymbol(1)
-        if e3.startswith('S'):
+        elif e3.startswith('S'):
             return AlphabetSymbol(self._parse_numeric(e3[1:], e3))
-        if e3.startswith('q'):
+        elif e3.startswith('q'):
             return InternalConfig(self._parse_numeric(e3[1:], e3))
         raise ValueError(f"'{e3}' is an invalid quadruple third element.")
 
