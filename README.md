@@ -30,8 +30,14 @@ This defines a Turing machine capable of adding nonnegative integers. We have:
  (01111q₂0111111, [q₂ 1 R q₂]),
  (011110q₃111111, [q₂ 0 R q₃]),
  (011110q₃011111, [q₃ 1 0 q₃])]
+```
+
+```python
 >>> adder_machine.resultant([4,5])
 011110q₃011111
+```
+
+```python
 >>> adder_machine.resultant([4,5]).count_ones()
 9
 ``` 
