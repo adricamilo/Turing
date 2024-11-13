@@ -1,6 +1,6 @@
 # Turing
 
-This is a Python simulator of a modified Turing machine. This construction was first suggested by Post [1]. For a complete theorical description, see Chapter 1 of Davis [2].
+This is a Python simulator of a modified Turing machine. This construction was first suggested by Post [1]. For a complete theoretical description, see Chapter 1 of Davis [2].
 
 ## Basic usage
 
