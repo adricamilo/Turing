@@ -8,7 +8,7 @@ To define a Turing machine, we use the `TuringMachine` class. For example:
 
 ```python
 >>> from Turing import TuringMachine, Quadruple
->>> adder_machine = TuringMachine([
+>>> adding_machine = TuringMachine([
 ...     Quadruple(1, 1, '0', 1),
 ...     Quadruple(1, 0, 'R', 2),
 ...     Quadruple(2, 1, 'R', 2),
@@ -20,7 +20,7 @@ To define a Turing machine, we use the `TuringMachine` class. For example:
 This defines a Turing machine capable of adding nonnegative integers. We have:
 
 ```python
->>> adder_machine.compute([4,5])
+>>> adding_machine.compute([4,5])
 [(q₁111110111111, None),
  (q₁011110111111, [q₁ 1 0 q₁]),
  (0q₂11110111111, [q₁ 0 R q₂]),
@@ -33,12 +33,12 @@ This defines a Turing machine capable of adding nonnegative integers. We have:
 ```
 
 ```python
->>> adder_machine.resultant([4,5])
+>>> adding_machine.resultant([4,5])
 011110q₃011111
 ```
 
 ```python
->>> adder_machine.resultant([4,5]).count_ones()
+>>> adding_machine.resultant([4,5]).count_ones()
 9
 ``` 
 
